@@ -1,0 +1,12 @@
+sudo docker run -it -d ubuntu
+sudo docker exec -it <contianer id > bash
+in docker
+apt-get update
+apt-get install -y apache2
+sudo docker commit <containerid> apache
+sudo docker run -it -p 84:80 -d apache
+sudo docker exec -it <containerid>bash
+service apache2 status
+service apache2 start
+service apache2 status
+
